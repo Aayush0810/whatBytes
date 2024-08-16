@@ -11,7 +11,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="flex flex-col h-screen">
+          <header className="flex justify-between items-center p-4 border-b gap-3">
+            <div className="flex items-center">
+              <img src="/logo.png" alt="logo" className="h-8 w-auto mr-2" />
+            </div>
+            <div className="flex items-center border rounded-lg p-2">
+              <span className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center mr-2">A</span>
+              <span>Aayush Pargal</span>
+            </div>
+          </header>
+          <div className="flex flex-1 overflow-hidden">
+            {children}
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
