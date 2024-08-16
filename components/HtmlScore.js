@@ -2,8 +2,8 @@ import React from "react";
 
 const HtmlScore = ({ onUpdateClick }) => {
   return (
-    <div className="flex flex-col p-3 gap-5 md:flex-row">
-      <div className="flex gap-3">
+    <div className="flex flex-col p-3 gap-5 md:flex-row md:justify-between">
+      <div className="flex justify-between gap-4">
         <img src="/html-icon.png" alt="" />
         <div className="flex flex-col justify-center">
           <p className="font-bold text-lg">Hyper Text Markup Language</p>
